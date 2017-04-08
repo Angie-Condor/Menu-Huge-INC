@@ -1,7 +1,18 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+
 html, body{
-  background-color: rgb(228, 224, 231)
+  background-color: rgb(228, 224, 231);
+  overflow: auto;
 }
 
+/*Estilo para el nav de inicio*/
 nav{
   top: 0;
   left: 0;
@@ -12,7 +23,7 @@ nav{
   margin-top: 0;
   position: fixed;
   padding-top: 0px;
-  background: rgb(66, 62, 62);
+  background: rgba(75, 78, 76, 0.88);
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 /*Estilo para la hamburguesa al aparecer y desaparecer*/
@@ -20,7 +31,7 @@ nav{
   background-color: rgba(247, 182, 23, 0.81);
 }
 
-/*Estilos para el tag nav*/
+/*Estilos propios para el tag nav*/
 nav .nav-background {
   top: 0px;
   opacity:0;
@@ -44,7 +55,7 @@ nav.open {
   -moz-transition: none;
   -webkit-transition: none;
 }
-/*Navigation list*/
+/*Estilos para la lista de navegación*/
 nav ul {
   top: -10%;
   padding: 0;
@@ -168,13 +179,86 @@ nav.solid #logo .logo {
   background: #fff !important;
   transform: rotate(-45deg);
 }
-/*Estilos para el footer*/
-footer{
-  bottom: 0px;
-  position: absolute;
+
+.promocion{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  padding: 0 0px 0 0px;
+  overflow: auto;
 }
 
-.grid{
-  width: 20%;
-  height: 300px;
+h2{
+  margin: 15px auto;
+  padding: 15px;
+}
+
+/*Estilos para las imágenes*/
+.box-coders{
+  height: 484px;
+  margin: 0;
+  display: table-cell;
+}
+
+.coders{
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 0;
+}
+
+.cada-coder{
+  position: relative;
+  display: table-cell;
+  width: 33%;
+  height: 60px;
+  overflow: hidden;
+}
+
+.foto-coders, .center{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 1.0s;
+}
+
+.foto-coders{
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.center{
+  color: white;
+  font-style: bold;
+  font-size: 34px;
+  background: #f7b617;
+  width: 100%;
+  height: 400px;
+  padding: 160px 60px;
+  cursor: pointer;
+  z-index: 0;
+  display: table-cell;
+}
+
+.foto-coders:hover{
+  transform: scale(1.1);
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.center:hover{
+  cursor: pointer;
+  opacity: 0.99;
+}
+
+/*Estilos para el footer*/
+footer{
+  left: 0;
+  bottom: 0px;
+  position: absolute;
+  background-color:
 }
